@@ -1,3 +1,4 @@
+//Array Method
 import java.util.Arrays;
 
 public class CountingFrequencies {
