@@ -17,8 +17,7 @@ public class SquaresofSortedArray {
         int  right=n-1;
         int [] j = new int[n];
         for(int i =0;i<n;i++){
-            arr[i] = arr[i]*arr[i];        
-            
+            arr[i] = arr[i]*arr[i];          
         }
         for(int i = n-1 ;i>=0 ;i--){
             if(arr[left]> arr[right]){
@@ -27,9 +26,8 @@ public class SquaresofSortedArray {
             }else{
                 j[i]=arr[right];
                 right --;
-            }
-            }
-            return j;
+            }}
+           return j;
         }
       
         
