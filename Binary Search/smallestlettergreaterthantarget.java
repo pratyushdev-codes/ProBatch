@@ -1,18 +1,20 @@
-public class smallestlettergreaterthantarget {
+public class Smallestlettergreaterthantarget{
     public static void main(String[] args) {
         
-    } public char nextGreatestLetter(char[] letters, char target) {
-        int start = 0, end = letters.length-1; 
-        
-        while(start<=end){
-            int mid = start + (end - start)/2;
-            if(letters[mid]>target){
-                end = mid - 1;
+    }   public char nextGreatestLetter(char[] letters, char target) {
+        int start =0;
+        int end= letters.length-1;
+         while(start<=end){
+            int mid = (end-start)+end/2;
+            if((letters[mid])<= target){
+                start = mid+1;
+            }else{
+                end = mid-1;
+            }if(start==letters.length){
+                return letters[0];
+
             }
-            else{
-                start = mid + 1;
-            }
-        }
-        return letters[start % letters.length];
-    }
-}
+            return letters[start];
+         }
+
+}}
