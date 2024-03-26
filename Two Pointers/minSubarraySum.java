@@ -10,6 +10,7 @@ public class minSubarraySum {
             sum= sum+nums[j];
             while(sum>= target){
                 length= Math.min(length, j-i+1);
+                
         
             }
         }
