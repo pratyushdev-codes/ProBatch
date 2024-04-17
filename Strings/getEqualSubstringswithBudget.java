@@ -14,7 +14,7 @@
 public class getEqualSubstringswithBudget {
 
     public static void main(String[] args) {
-        public int equalSubstring(String s, String t, int maxCost) {
+    }public int equalSubstring(String s, String t, int maxCost) {
           
         int head =0, tail =0, cost =0, ans =0;
          for(int i=0; i<s.length();i++){
@@ -30,3 +30,4 @@ return ans;
 
         }
     }
+    
