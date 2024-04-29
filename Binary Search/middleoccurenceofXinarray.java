@@ -19,7 +19,7 @@ public class middleoccurenceofXinarray {
 
             if (arr[mid] == x) {
                 firstocc = mid;
-                end = mid - 1;
+                end = mid - 1;// Check for more first occurences  on left side
 
             } else if (arr[mid] < x) {
                 start = mid + 1;
